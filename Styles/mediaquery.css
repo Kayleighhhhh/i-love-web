@@ -1,0 +1,11 @@
+body {
+    background-color: lightblue;
+}
+
+@media (min-width: 600px) {
+    body {
+        background-image: url("../assets/bg1.jpg");
+        background-repeat: no-repeat;
+        background-size: 110%;
+    }
+}

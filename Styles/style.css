@@ -3,5 +3,21 @@
 }
 
 body {
-    background-color: plum;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-image: url(../assets/bg1.jpg);
+    font-size: 18.5em;
+    padding: 2px 8px 350px 2px;
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+
+.buttons {
+ color:white;
+ text-align: center;
+ background-color: black;
+ 
 }

@@ -1,23 +1,95 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 header {
-    background-image: url(../assets/bg1.jpg);
-    font-size: 18.5em;
-    padding: 2px 8px 350px 2px;
-    background-repeat: no-repeat;
-    background-size: 110%;
+  background-image: url(../assets/bg1.jpg);
+  font-size: 3em;
+  padding: 60px 30px;
+  text-align:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .buttons {
- color:white;
- text-align: center;
- background-color: black;
- 
+  display: flex;
+  flex-direction:column;
+}
+
+.nav {
+  display: none;
+}
+
+.nav a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border: 0.5px solid #2d2d2d;
+}
+
+.nav.show {
+  display: block;
+}
+
+.button-nav {
+  background-color: black;
+  color: white;
+  border: 0.5px solid #2d2d2d;
+  height: 5em;
+  font-size: 1em;
+  cursor: pointer;
+  width: 100%;
+}
+
+.ordered {
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+}
+
+.about, .slider {
+  border: 0.5px solid #2d2d2d;
+  padding: 30px;
+}
+
+.end {
+  min-height: 50px;
+  text-align: center;
+  border: 0.5px solid #2d2d2d;
+}
+
+@media (min-width: 768px) {
+  header {
+    font-size: 10em;
+    padding: 2px 8px 450px 2px;
+    text-align: left;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .button-nav {
+    height: 5em;
+  }
+
+  .ordered {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+    header {
+        font-size: 15em;
+    }
 }

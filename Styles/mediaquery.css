@@ -6,6 +6,7 @@ body {
     body {
         background-image: url("../assets/bg1.jpg");
         background-repeat: no-repeat;
-        background-size: 110%;
+        background-size: cover;
+        background-position: center;
     }
 }

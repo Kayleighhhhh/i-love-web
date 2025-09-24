@@ -55,6 +55,7 @@ footer {
     width: 180px;
     display: flex;
     justify-self: center;
+    border-radius: 10px;
 }
 
 .mail {

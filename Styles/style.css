@@ -1,99 +1,100 @@
-* {
-  box-sizing: border-box;
+*{
+    box-sizing: border-box;
 }
 
 body {
-  background-color: black;
-  color: white;
+    background-image: url(../assets/stacked-waves-haikei.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    -webkit-background-size: cover;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+    margin: 0;
+    padding:20px;
+    gap:20px;
 }
+
+header, main, footer {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding:20px;
+}
+
+
 
 header {
-  background-image: url(../assets/bg2.jpg);
-  font-size: 3em;
-  padding: 60px 30px;
-  text-align:center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
 }
 
-.buttons {
-  display: flex;
-  flex-direction:column;
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-.nav {
-  display: none;
+.menu {
+    text-decoration: none;
+    color:black;
 }
 
-.nav a {
-  display: block;
-  padding: 8px;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  border: 0.5px solid #2d2d2d;
+
+
+main {
+    grid-column: 2;
+    grid-row: 2;
 }
 
-.nav.show {
-  display: block;
+
+
+footer {
+    grid-row: 1/3;
+    grid-column: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.button-nav {
-  background-color: black;
-  color: white;
-  border: 0.5px solid #2d2d2d;
-  height: 5em;
-  font-size: 1em;
-  cursor: pointer;
-  width: 100%;
+.img {
+    width: 180px;
+    display: flex;
+    justify-self: center;
+    border-radius: 10px;
 }
 
-.ordered {
-  display: flex;
-  flex-direction:column;
-  text-align: center;
+.mail {
+    text-decoration: none;
+    color: black;
 }
 
-.about, .slider {
-  border: 0.5px solid #2d2d2d;
-  padding: 30px;
+.logo {
+    text-decoration: none;
 }
 
-.end {
-  min-height: 50px;
-  text-align: center;
-  border: 0.5px solid #2d2d2d;
-}
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
 
-@media (min-width: 768px) {
-  header {
-    font-size: 10em;
-    padding: 2px 8px 450px 2px;
-    text-align: left;
-  }
-
-  .buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  .button-nav {
-    height: 5em;
-  }
-
-  .nav a {
-    border: 0.5px 0 0.5px 0 solid #2d2d2d;
-  }
-
-  .ordered {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 1200px) {
     header {
-        font-size: 15em;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    main {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    footer {
+        grid-column: 1;
+        grid-row: 3;
     }
 }

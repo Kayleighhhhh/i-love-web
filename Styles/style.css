@@ -41,6 +41,10 @@ nav{
 .menu {
     text-decoration: none;
     color:black;
+    /*border: solid 2px rgba(255, 255, 255, 0.3);*/
+    border-radius: 5em;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
 }
 
 
@@ -68,9 +72,14 @@ footer {
     border-radius: 10px;
 }
 
+.linkjes {
+  margin: 10px;
+}
+
 .mail {
     text-decoration: none;
     color: black;
+    font-weight: bold;
 }
 
 .logo {

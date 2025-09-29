@@ -1,0 +1,7 @@
+main {
+    display: flex;
+}
+
+h1 {
+    align-content: flex-end;
+}

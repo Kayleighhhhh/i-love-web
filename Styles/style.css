@@ -47,7 +47,10 @@ nav{
     font-weight: bold;
 }
 
-
+#active {
+    color: white;
+    background-color: rgb(28, 4, 83, 0.3);
+}
 
 main {
     grid-column: 2;

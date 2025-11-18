@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: myfont;
+    src: url(/assets/PixelFont-Regular.otf) format(opentype);
+
+}
+
 body {
     background-image: url(../assets/stacked-waves-haikei.png);
     background-repeat: no-repeat;
@@ -16,6 +22,7 @@ body {
     margin: 0;
     padding:20px;
     gap:20px;
+    /* font-family: myfont; */
 }
 
 header, main, footer, section{

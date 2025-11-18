@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+.first {
+    blockquote {
+        font-size: 3em;
+    }
+    p {
+        font-size: 2vw;
+    }
+}
+
+.second {
+    blockquote {
+        margin-left: 5cap;
+        margin-right: 9ch;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+
+        p {
+            font-weight: 800;
+        }
+
+    }
+
+    p {
+        font-size: 51%;
+    }
+}

@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+fieldset:first-of-type {
+    legend{
+        font-size: 2.5em;
+    }
+
+    label {
+        font-size: 2em;
+
+        input {
+            accent-color: blueviolet;
+            background-color: pink;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+
+        }
+
+    }
+}
+fieldset:nth-of-type(2) {
+    font-size: 2em;
+}

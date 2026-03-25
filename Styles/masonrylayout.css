@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+  display: grid-lanes;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  height: 1em;
+  width: auto;
+}
+
+.item {
+    color: aquamarine;
+}

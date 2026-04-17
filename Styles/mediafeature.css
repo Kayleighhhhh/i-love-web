@@ -1,0 +1,56 @@
+ body {
+     background-color: rgb(228, 252, 252);
+     color: rgb(38, 52, 80);
+ }
+
+ section {
+     width: 15em;
+     height: 15em;
+     border: 2px solid green;
+     justify-items: center;
+     align-content: center;
+ }
+
+ .color {
+     background-color: bisque;
+     color: brown;
+ }
+
+ 
+
+ .motion {
+
+     h1:hover {
+         transform: scale(1.3);
+         transition: 1s;
+     }
+ }
+
+ .transparent {
+    h1 {
+        background-color: azure;
+    }
+ }
+
+ @media (prefers-reduced-motion: no-preference) {
+     .motion {
+
+         h1:hover {
+             transform: scale(2);
+             transition: .3s;
+         }
+     }
+
+ }
+
+@media screen and (prefers-color-scheme: dark) {
+     body {
+         background-color: #200237;
+         color: #b5fdff;
+     }
+
+     .color {
+         background-color: brown;
+         color: bisque;
+     }
+ }

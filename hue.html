@@ -1,0 +1,40 @@
+<p class="een">blueviolet</p>
+<p class="twee">blueviolet rgb</p>
+<p class="drie">blueviolet hex</p>
+<p class="vier">blueviolet hsl</p>
+<p class="vijf">custom properties</p>
+
+<style>
+    p {
+        font-size: 30px;
+    }
+
+    .een {
+        color: blueviolet;
+    }
+
+    .twee {
+        color: rgb(140, 60, 255);
+    }
+
+    .drie {
+        color: #8833ff;
+    }
+
+    .vier {
+        color: hsl(265 100 60);
+    }
+
+    .vijf {
+        --h: 265;
+        --s: 100;
+        --l: 60;
+        --a: 1;
+        color: hsl(var(--h) var(--s) var(--l) / var(--a));
+
+        &:hover {
+            --l: 30;
+        }
+    }
+
+</style>
